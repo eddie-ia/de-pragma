@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     make \
     python3 \
     python3-pip \
+    && ln -s /usr/bin/python3 /usr/bin/python \
     && apt-get clean
 
 COPY . .
